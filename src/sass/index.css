@@ -1,0 +1,58 @@
+.user {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  justify-content: center;
+  text-align: center;
+}
+.user .pfp {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 1rem auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #74b9ff;
+  position: relative;
+}
+.user .pfp img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user .info {
+  margin: 1rem 0;
+}
+.user .info p {
+  margin: 0;
+}
+.user .info p.job {
+  color: #0984e3;
+}
+.user .content {
+  padding: 0 2rem;
+  text-align: left;
+}
+.user .content p:first-letter {
+  padding-left: 2rem;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b2bec3;
+  max-width: 520px;
+  margin-inline: auto;
+}
+.reviews .buttons {
+  color: #0984e3;
+  font-size: 125%;
+  margin: 1rem;
+}
+.reviews .buttons * {
+  padding-inline: 0.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
