@@ -47,6 +47,9 @@ body {
   padding: 0 2rem;
   text-align: left;
 }
+.user .content p:first-letter {
+  padding-left: 2rem;
+}
 
 .reviews {
   display: flex;
