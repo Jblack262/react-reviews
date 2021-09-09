@@ -1,9 +1,11 @@
 import React from 'react';
-import {AiFillStar} from 'react-icons/ai';
+import {BsStarFill, BsStarHalf} from 'react-icons/bs';
 
 function User({user}) {
   const {rating, name, job, image, text} = user;
-  
+
+  const hasHalfStar = (Math.floor(rating) !== rating);
+
   return (
     <div className="user">
       <div className="pfp">
@@ -14,13 +16,13 @@ function User({user}) {
         <p className="job">{job.toUpperCase()}</p>
         <div className="rating">
           {
-            [...Array(Math.round(rating))].map((x, index) => {
+            [...Array(Math.floor(rating))].map((x, index) => {
               return (
-                if (index == )
-                <AiFillStar key={index}/>
+                <BsStarFill key={index}/>
               )
             })
           }
+          {(hasHalfStar) ? <BsStarHalf/> : ""}
         </div>
       </div>
       <div className="content">
